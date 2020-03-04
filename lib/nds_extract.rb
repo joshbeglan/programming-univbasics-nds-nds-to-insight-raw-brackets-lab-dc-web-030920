@@ -19,13 +19,13 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   
-  total = 0
   i = 0
   
   while i < nds.length
     director = nds[i]
     name = director[:name]
     movies = director[:movies]
+    total = 0
     j = 0
 
     while j < movies.length
@@ -35,7 +35,7 @@ def directors_totals(nds)
 
       j += 1
     end
-    
+   
     i += 1
   end
   
