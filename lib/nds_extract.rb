@@ -23,5 +23,20 @@ def directors_totals(nds)
   i = 0
   
   while i < nds.length
+    director = nds[i]
+    name = director[:name]
+    movies = director[:movies]
     j = 0
+
+    while j < movies.length
+      gross = movies[j][:worldwide_gross]
+      total += gross
+
+      j += 1
+    end
+    puts total
+    i += 1
+  end
+  
+  return result
 end
