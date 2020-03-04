@@ -34,7 +34,7 @@ def directors_totals(nds)
 
       j += 1
     end
-    puts total
+
     i += 1
   end
   
